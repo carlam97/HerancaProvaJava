@@ -4,9 +4,17 @@ public class Gerente extends Funcionario {
 
     public double getSenha() {
         return senha;
-    }
-public void setSenha(double senha) {
+    }public void setSenha(double senha) {
         this.senha = senha;
+    }
+
+    public boolean autenticacao(double senhaInput){
+        if (senhaInput == this.getSenha()){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
 }

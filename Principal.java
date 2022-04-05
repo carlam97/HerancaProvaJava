@@ -22,9 +22,11 @@ public class Principal{
         gerente.setCpf("564.778.664-43");
         gerente.setSalario(26000);
         gerente.setDepartamento("Gerente de Produção");
-        System.out.println("Digite a senha do gerente");
+        gerente.setSenha(0000);
+       System.out.println(""); 
         Scanner sc = new Scanner(System.in);
-        gerente.setSenha(sc.nextDouble());
+        System.out.println("Digite a senha do gerente");
+        if (gerente.autenticacao(sc.nextDouble())){
         System.out.println("Informações do Gerente");
         System.out.println("Nome: " + gerente.getNome());
         System.out.println("CPF: " + gerente.getCpf());
@@ -32,6 +34,8 @@ public class Principal{
         System.out.println("Departamento: " + gerente.getDepartamento());
 
         sc.close();
+        }
+        else{ System.out.println("Senha incorreta");}
         
     }
 }
