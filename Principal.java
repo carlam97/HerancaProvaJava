@@ -14,7 +14,7 @@ public class Principal{
         System.out.println("Informações pessoais do funcionário");
         System.out.println("Nome: " + funcionario.getNome());
         System.out.println("CPF: " + funcionario.getCpf());
-        System.out.println("Salário: R$" + funcionario.getSalario());
+        System.out.println("Salário: R$" + funcionario.Bonificacao());
         System.out.println("Departamento: " + funcionario.getDepartamento());
         
 
@@ -23,14 +23,14 @@ public class Principal{
         gerente.setSalario(26000);
         gerente.setDepartamento("Gerente de Produção");
         gerente.setSenha(0000);
-       System.out.println(""); 
+        System.out.println(""); 
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite a senha do gerente");
         if (gerente.autenticacao(sc.nextDouble())){
         System.out.println("Informações do Gerente");
         System.out.println("Nome: " + gerente.getNome());
         System.out.println("CPF: " + gerente.getCpf());
-        System.out.println("Salario: " + gerente.getSalario());
+        System.out.println("Salario: " + gerente.Bonificacao());     
         System.out.println("Departamento: " + gerente.getDepartamento());
 
         sc.close();

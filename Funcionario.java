@@ -30,10 +30,9 @@ public class Funcionario {
     }
 
     public double Bonificacao(){
-        double salarioTotal=0;
-        salarioTotal=(this.salario*0.1) + this.salario;
-        return salarioTotal;
+        double bonus = getSalario()*10/100;
+        double total = getSalario() + bonus;
+        return total; 
     }
 
-    
 }
